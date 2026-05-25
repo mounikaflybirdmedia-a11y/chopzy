@@ -4,9 +4,17 @@ import spinach from "@/assets/p-spinach.jpg";
 import onion from "@/assets/p-onion.jpg";
 import pepper from "@/assets/p-pepper.jpg";
 import garlic from "@/assets/p-garlic.jpg";
+import potato from "@/assets/p-potato.jpg";
+import cauliflower from "@/assets/p-cauliflower.jpg";
+import brinjal from "@/assets/p-brinjal.jpg";
+import okra from "@/assets/p-okra.jpg";
+import cucumber from "@/assets/p-cucumber.jpg";
 import fruitBowl from "@/assets/fruit-bowl.jpg";
 import mealKit from "@/assets/meal-kit.jpg";
 import meat from "@/assets/meat.jpg";
+import mutton from "@/assets/p-mutton.jpg";
+import prawns from "@/assets/p-prawns.jpg";
+import fish from "@/assets/p-fish.jpg";
 import cutVeggies from "@/assets/cut-veggies.jpg";
 
 export type Category =
@@ -104,6 +112,61 @@ export const products: Product[] = [
     related: ["onion", "tomato", "spinach"],
   },
   {
+    id: "potato",
+    name: "Farm Potatoes",
+    category: "vegetables",
+    price: 38, unit: "1 kg",
+    image: potato,
+    short: "Starchy & versatile",
+    description: "Fresh farm potatoes, perfect for roasting, mashing, frying or curries. A kitchen staple.",
+    related: ["onion", "cauliflower", "brinjal"],
+    cutAvailable: true, cutPrice: 52,
+  },
+  {
+    id: "cauliflower",
+    name: "Cauliflower Florets",
+    category: "vegetables",
+    price: 45, unit: "500 g",
+    image: cauliflower,
+    short: "Mild & buttery",
+    description: "Crisp white cauliflower with tender florets. Great for stir-fries, soups, or roasted whole.",
+    related: ["potato", "pepper", "onion"],
+    cutAvailable: true, cutPrice: 60,
+  },
+  {
+    id: "brinjal",
+    name: "Purple Brinjals",
+    category: "vegetables",
+    price: 42, unit: "500 g",
+    image: brinjal,
+    short: "Tender & creamy",
+    description: "Glossy purple brinjals with creamy flesh. Ideal for baingan bharta, fry, or curry preparations.",
+    related: ["onion", "tomato", "garlic"],
+    cutAvailable: true, cutPrice: 56,
+  },
+  {
+    id: "okra",
+    name: "Fresh Okra",
+    category: "vegetables",
+    price: 48, unit: "500 g",
+    image: okra,
+    short: "Crisp & fibre-rich",
+    description: "Slender green okra pods, tender and fresh. Perfect for bhindi fry, sambar, or stuffed masala.",
+    related: ["onion", "tomato", "garlic"],
+    cutAvailable: true, cutPrice: 62,
+  },
+  {
+    id: "cucumber",
+    name: "Garden Cucumbers",
+    category: "vegetables",
+    price: 32, unit: "500 g",
+    image: cucumber,
+    short: "Cool & crunchy",
+    description: "Long, crisp cucumbers with thin skin. Refreshing in salads, raita, or as a healthy snack.",
+    related: ["tomato", "onion", "carrot"],
+    cutAvailable: true, cutPrice: 45,
+  },
+  {
     id: "berry-bowl",
     name: "Berry Sunshine Bowl",
     category: "fruits",
@@ -132,6 +195,36 @@ export const products: Product[] = [
     short: "Cleaned & cut fresh",
     description: "Tender country chicken, hand-cleaned and cut to order. Delivered chilled and vacuum sealed.",
     related: ["onion", "garlic", "pepper"],
+  },
+  {
+    id: "mutton",
+    name: "Goat Mutton Cuts",
+    category: "meat",
+    price: 520, unit: "500 g",
+    image: mutton,
+    short: "Rich & tender",
+    description: "Premium goat mutton, hand-cut into curry pieces. Delivered fresh, cleaned, and ready to marinate.",
+    related: ["onion", "garlic", "tomato"],
+  },
+  {
+    id: "prawns",
+    name: "Tiger Prawns",
+    category: "meat",
+    price: 450, unit: "500 g",
+    image: prawns,
+    short: "Deveined & cleaned",
+    description: "Large tiger prawns, cleaned and deveined. Perfect for grills, curries, or fried preparations.",
+    related: ["garlic", "pepper", "onion"],
+  },
+  {
+    id: "fish",
+    name: "Fresh Fish Fillets",
+    category: "meat",
+    price: 380, unit: "500 g",
+    image: fish,
+    short: "Boneless & flaky",
+    description: "Fresh catch fish fillets, deboned and cleaned. Mild flavour, great for fry, curry, or grill.",
+    related: ["onion", "garlic", "tomato"],
   },
   {
     id: "mirepoix",
