@@ -16,6 +16,17 @@ import mutton from "@/assets/p-mutton.jpg";
 import prawns from "@/assets/p-prawns.jpg";
 import fish from "@/assets/p-fish.jpg";
 import cutVeggies from "@/assets/cut-veggies.jpg";
+import cutOnion from "@/assets/cut-onion.jpg";
+import cutPotato from "@/assets/cut-potato.jpg";
+import cutCarrot from "@/assets/cut-carrot.jpg";
+import cutSambar from "@/assets/cut-sambar.jpg";
+import cutStirfry from "@/assets/cut-stirfry.jpg";
+import kitPaneerTikka from "@/assets/kit-paneer-tikka.jpg";
+import kitButterChicken from "@/assets/kit-butter-chicken.jpg";
+import kitThaiCurry from "@/assets/kit-thai-curry.jpg";
+import kitHyderabadiBiryani from "@/assets/kit-hyderabadi-biryani.jpg";
+import kitVeggiePasta from "@/assets/kit-veggie-pasta.jpg";
+import kitMexicanTaco from "@/assets/kit-mexican-taco.jpg";
 
 export type Category =
   | "vegetables"
@@ -187,6 +198,66 @@ export const products: Product[] = [
     related: ["pepper", "onion", "garlic"],
   },
   {
+    id: "paneer-tikka-kit",
+    name: "Spicy Paneer Tikka Meal Kit",
+    category: "meal-kits",
+    price: 340, unit: "serves 2",
+    image: kitPaneerTikka,
+    short: "Paneer & veggies in tikka marinade",
+    description: "Complete kit with pre-cut paneer cubes, capsicum, onion, and spiced yogurt tikka marinade. Skewers included.",
+    related: ["onion", "pepper", "garlic"],
+  },
+  {
+    id: "butter-chicken-kit",
+    name: "Classic Butter Chicken Kit",
+    category: "meal-kits",
+    price: 420, unit: "serves 2",
+    image: kitButterChicken,
+    short: "Rich & creamy North Indian classic",
+    description: "Fresh boneless chicken pieces, rich tomato-butter gravy mix, aromatic spices, and fresh cream. Cook in 15 minutes.",
+    related: ["onion", "garlic", "tomato"],
+  },
+  {
+    id: "thai-green-curry",
+    name: "Thai Green Curry Bowl Kit",
+    category: "meal-kits",
+    price: 380, unit: "serves 2",
+    image: kitThaiCurry,
+    short: "Fragrant, spiced & comforting",
+    description: "Authentic green curry paste, coconut milk, fresh broccoli, carrots, eggplant, baby corn, and Thai basil leaves.",
+    related: ["carrot", "garlic"],
+  },
+  {
+    id: "hyderabadi-biryani-kit",
+    name: "Hyderabadi Biryani Meal Kit",
+    category: "meal-kits",
+    price: 480, unit: "serves 2",
+    image: kitHyderabadiBiryani,
+    short: "Aromatic dum biryani kit",
+    description: "Premium basmati rice, marinated tender chicken pieces, fried onions, mint, coriander, and authentic biryani spice mix.",
+    related: ["onion", "garlic", "tomato"],
+  },
+  {
+    id: "veggie-pasta-kit",
+    name: "Farmhouse Veggie Pasta Kit",
+    category: "meal-kits",
+    price: 290, unit: "serves 2",
+    image: kitVeggiePasta,
+    short: "Italian style veggie pasta",
+    description: "Durum wheat penne pasta, farm-fresh cherry tomatoes, zucchini, bell peppers, broccoli, and rich marinara herb sauce.",
+    related: ["tomato", "pepper", "garlic"],
+  },
+  {
+    id: "mexican-taco-kit",
+    name: "Mexican Taco Fiesta Kit",
+    category: "meal-kits",
+    price: 350, unit: "serves 2",
+    image: kitMexicanTaco,
+    short: "Make-your-own taco pack",
+    description: "Crispy taco shells, seasoned black beans, fresh tomato salsa, sweet corn, sour cream, and shredded cheddar cheese.",
+    related: ["tomato", "onion", "pepper"],
+  },
+  {
     id: "chicken",
     name: "Country Chicken Cuts",
     category: "meat",
@@ -235,6 +306,56 @@ export const products: Product[] = [
     short: "Onion · carrot · celery",
     description: "Pre-diced onion, carrot and celery — the perfect base for soups, stocks and stews.",
     related: ["garlic", "tomato"],
+  },
+  {
+    id: "chopped-onions",
+    name: "Chopped Red Onions",
+    category: "cut-vegetables",
+    price: 42, unit: "500 g",
+    image: cutOnion,
+    short: "Diced & tear-free",
+    description: "Perfectly diced red onions. Cleaned, cut, and packed fresh. No tears, no prep time.",
+    related: ["tomato", "garlic", "potato"],
+  },
+  {
+    id: "diced-potatoes",
+    name: "Diced Farm Potatoes",
+    category: "cut-vegetables",
+    price: 52, unit: "500 g",
+    image: cutPotato,
+    short: "Peeled & cubed",
+    description: "Freshly peeled and diced farm potatoes. Perfect for curries, bakes, or frying.",
+    related: ["onion", "cauliflower", "tomato"],
+  },
+  {
+    id: "julienne-carrots",
+    name: "Julienned Carrots",
+    category: "cut-vegetables",
+    price: 50, unit: "250 g",
+    image: cutCarrot,
+    short: "Matchstick carrot strips",
+    description: "Thinly julienned fresh carrots. Excellent for stir-fries, salads, fried rice, and spring rolls.",
+    related: ["spinach", "onion", "garlic"],
+  },
+  {
+    id: "stirfry-veggies",
+    name: "Stir-Fry Veggie Mix",
+    category: "cut-vegetables",
+    price: 120, unit: "400 g",
+    image: cutStirfry,
+    short: "Peppers, carrot & broccoli",
+    description: "A colorful, crisp assortment of stir-fry ready vegetables. Washed, chopped, and vacuum-sealed for maximum freshness.",
+    related: ["garlic", "onion", "tomato"],
+  },
+  {
+    id: "sambar-mix",
+    name: "Sambar Veggie Mix",
+    category: "cut-vegetables",
+    price: 95, unit: "500 g",
+    image: cutSambar,
+    short: "Traditional sambar cuts",
+    description: "Traditional selection of freshly cut vegetables like drumstick, brinjal, pumpkin, and okra for making the perfect South Indian Sambar.",
+    related: ["tomato", "onion", "garlic"],
   },
 ];
 

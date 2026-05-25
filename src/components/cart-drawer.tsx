@@ -1,4 +1,5 @@
 import { X, Minus, Plus, ShoppingBag } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 import { useCart } from "@/context/cart";
 
 export function CartDrawer() {
@@ -65,9 +66,13 @@ export function CartDrawer() {
               <span className="text-muted-foreground">Subtotal</span>
               <span className="font-display text-xl">₹{subtotal}</span>
             </div>
-            <button className="w-full rounded-full bg-primary py-3 text-sm font-semibold text-primary-foreground transition hover:opacity-90">
+            <Link
+              to="/checkout"
+              onClick={() => setOpen(false)}
+              className="block w-full text-center rounded-full bg-primary py-3 text-sm font-semibold text-primary-foreground transition hover:opacity-90"
+            >
               Checkout
-            </button>
+            </Link>
             <button onClick={clear} className="mt-2 w-full text-xs text-muted-foreground hover:text-foreground">
               Clear basket
             </button>
